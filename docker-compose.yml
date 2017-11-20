@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  sonarqube:
+    build: .
+    ports:
+      - "9000:9000"
