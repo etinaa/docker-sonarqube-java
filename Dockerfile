@@ -1,13 +1,13 @@
-FROM sonarqube:7.0
+FROM sonarqube:7.1
 LABEL maintainer.name="Andrey Etin" \
       maintainer.email="etinaa@yandex.ru"
 
 #Bundled plugins
-ENV GIT_PLUGIN_VERSION=1.3.0.869 \
-  JAVA_PLUGIN_VERSION=5.1.0.13090 \
+ENV GIT_PLUGIN_VERSION=1.4.0.1037 \
+  JAVA_PLUGIN_VERSION=5.3.0.13828 \
   JAVASCRIPT_PLUGIN_VERSION=4.1.0.6085 \
-  WEB_PLUGIN_VERSION=2.5.0.476 \
-  XML_PLUGIN_VERSION=1.4.3.1027
+  WEB_PLUGIN_VERSION=2.6.0.1053 \
+  XML_PLUGIN_VERSION=1.5.0.1373
 
 WORKDIR $SONARQUBE_HOME/lib/bundled-plugins
 
@@ -20,8 +20,8 @@ RUN set -x \
   && curl -fSL -o sonar-xml-plugin-${XML_PLUGIN_VERSION}.jar https://sonarsource.bintray.com/Distribution/sonar-xml-plugin/sonar-xml-plugin-${XML_PLUGIN_VERSION}.jar
 
 #Community plugins
-ENV CHECKSTYLE_PLUGIN_VERSION=4.8 \
-  FINDBUGS_PLUGIN_VERSION=3.6.0 \
+ENV CHECKSTYLE_PLUGIN_VERSION=4.10 \
+  FINDBUGS_PLUGIN_VERSION=3.7.0 \
   GROOVY_PLUGIN_VERSION=1.5 \
   PMD_PLUGIN_VERSION=2.6
 
