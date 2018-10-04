@@ -3,24 +3,24 @@ LABEL maintainer.name="Andrey Etin" \
       maintainer.email="etinaa@yandex.ru"
 
 #Bundled plugins
-ENV GIT_PLUGIN_VERSION=1.4.0.1037 \
-  JAVA_PLUGIN_VERSION=5.3.0.13828 \
-  JAVASCRIPT_PLUGIN_VERSION=4.1.0.6085 \
-  WEB_PLUGIN_VERSION=2.6.0.1053 \
-  XML_PLUGIN_VERSION=1.5.0.1373
+ENV JAVA_PLUGIN_VERSION=5.7.0.15470 \
+  JAVASCRIPT_PLUGIN_VERSION=4.2.1.6529 \
+  HTML_PLUGIN_VERSION=3.0.1.1444 \
+  KOTLIN_PLUGIN_VERSION=1.1.0.1552 \
+  XML_PLUGIN_VERSION=1.5.1.1452
 
 WORKDIR $SONARQUBE_HOME/lib/bundled-plugins
 
 RUN set -x \
   && rm -rf sonar-*.jar \
-  && curl -fSL -o sonar-scm-git-plugin-${GIT_PLUGIN_VERSION}.jar https://sonarsource.bintray.com/Distribution/sonar-scm-git-plugin/sonar-scm-git-plugin-${GIT_PLUGIN_VERSION}.jar \
   && curl -fSL -o sonar-java-plugin-${JAVA_PLUGIN_VERSION}.jar https://sonarsource.bintray.com/Distribution/sonar-java-plugin/sonar-java-plugin-${JAVA_PLUGIN_VERSION}.jar \
   && curl -fSL -o sonar-javascript-plugin-${JAVASCRIPT_PLUGIN_VERSION}.jar https://sonarsource.bintray.com/Distribution/sonar-javascript-plugin/sonar-javascript-plugin-${JAVASCRIPT_PLUGIN_VERSION}.jar \
-  && curl -fSL -o sonar-web-plugin-${WEB_PLUGIN_VERSION}.jar https://sonarsource.bintray.com/Distribution/sonar-web-plugin/sonar-web-plugin-${WEB_PLUGIN_VERSION}.jar \
+  && curl -fSL -o sonar-html-plugin-${HTML_PLUGIN_VERSION}.jar https://sonarsource.bintray.com/Distribution/sonar-html-plugin/sonar-html-plugin-${HTML_PLUGIN_VERSION}.jar \
+  && curl -fSL -o sonar-kotlin-plugin-${KOTLIN_PLUGIN_VERSION}.jar https://sonarsource.bintray.com/Distribution/sonar-kotlin-plugin/sonar-kotlin-plugin-${KOTLIN_PLUGIN_VERSION}.jar \
   && curl -fSL -o sonar-xml-plugin-${XML_PLUGIN_VERSION}.jar https://sonarsource.bintray.com/Distribution/sonar-xml-plugin/sonar-xml-plugin-${XML_PLUGIN_VERSION}.jar
 
 #Community plugins
-ENV CHECKSTYLE_PLUGIN_VERSION=4.10 \
+ENV CHECKSTYLE_PLUGIN_VERSION=4.11 \
   FINDBUGS_PLUGIN_VERSION=3.7.0 \
   GROOVY_PLUGIN_VERSION=1.5 \
   PMD_PLUGIN_VERSION=2.6

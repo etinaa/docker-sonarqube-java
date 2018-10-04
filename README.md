@@ -23,10 +23,10 @@ Links
 
 Used bundled plugins:
 
-[Sonar Git](https://docs.sonarqube.org/display/PLUG/Git+Plugin);
 [Sonar Java](https://docs.sonarqube.org/display/PLUG/SonarJava);
 [Sonar JavaScript](https://docs.sonarqube.org/display/PLUG/SonarJS);
-[Sonar Web](https://docs.sonarqube.org/display/PLUG/SonarWeb);
+[Sonar HTML (prev. Sonar Web)](https://docs.sonarqube.org/pages/viewpage.action?pageId=1441834);
+[Sonar Kotlin](https://docs.sonarqube.org/display/PLUG/SonarKotlin);
 [Sonar XML](https://docs.sonarqube.org/display/PLUG/SonarXML)
 
 Used community plugins:
