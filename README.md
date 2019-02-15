@@ -24,14 +24,14 @@ Links
 Used bundled plugins:
 
 [Sonar Java](https://docs.sonarqube.org/display/PLUG/SonarJava);
-[Sonar JavaScript](https://docs.sonarqube.org/display/PLUG/SonarJS);
-[Sonar HTML (prev. Sonar Web)](https://docs.sonarqube.org/pages/viewpage.action?pageId=1441834);
 [Sonar Kotlin](https://docs.sonarqube.org/display/PLUG/SonarKotlin);
-[Sonar XML](https://docs.sonarqube.org/display/PLUG/SonarXML)
+[Sonar JavaScript](https://docs.sonarqube.org/display/PLUG/SonarJS);
+[Sonar XML](https://docs.sonarqube.org/display/PLUG/SonarXML);
+[Sonar HTML (prev. Sonar Web)](https://docs.sonarqube.org/pages/viewpage.action?pageId=1441834)
 
 Used community plugins:
 
 [Sonar Checkstyle](https://github.com/checkstyle/sonar-checkstyle);
 [Sonar FindBugs](https://github.com/SonarQubeCommunity/sonar-findbugs);
-[Sonar Groovy](https://github.com/pmayweg/sonar-groovy);
-[Sonar PMD](https://github.com/SonarQubeCommunity/sonar-pmd)
+[Sonar PMD](https://github.com/SonarQubeCommunity/sonar-pmd);
+[Sonar Groovy](https://github.com/pmayweg/sonar-groovy)
