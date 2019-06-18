@@ -5,9 +5,9 @@ LABEL maintainer.name="Andrey Etin" \
 WORKDIR $SONARQUBE_HOME/extensions/plugins
 
 #Bundled plugins
-ENV JAVA_PLUGIN_VERSION=5.12.0.17701 \
+ENV JAVA_PLUGIN_VERSION=5.13.0.18197 \
   KOTLIN_PLUGIN_VERSION=1.5.0.315 \
-  JAVASCRIPT_PLUGIN_VERSION=5.1.1.7506 \
+  JAVASCRIPT_PLUGIN_VERSION=5.2.1.7778 \
   XML_PLUGIN_VERSION=2.0.1.2020 \
   HTML_PLUGIN_VERSION=3.1.0.1615
 
@@ -20,9 +20,9 @@ RUN set -x \
   && curl -fSL -o sonar-html-plugin-${HTML_PLUGIN_VERSION}.jar https://binaries.sonarsource.com/Distribution/sonar-html-plugin/sonar-html-plugin-${HTML_PLUGIN_VERSION}.jar
 
 #Community plugins
-ENV CHECKSTYLE_PLUGIN_VERSION=4.18 \
-  FINDBUGS_PLUGIN_VERSION=3.10.0 \
-  PMD_PLUGIN_VERSION=3.2.0
+ENV CHECKSTYLE_PLUGIN_VERSION=4.20 \
+  FINDBUGS_PLUGIN_VERSION=3.11.0 \
+  PMD_PLUGIN_VERSION=3.2.1
 
 RUN set -x \ 
   && curl -fSL -o sonar-checkstyle-plugin-${CHECKSTYLE_PLUGIN_VERSION}.jar https://github.com/checkstyle/sonar-checkstyle/releases/download/${CHECKSTYLE_PLUGIN_VERSION}/checkstyle-sonar-plugin-${CHECKSTYLE_PLUGIN_VERSION}.jar \
