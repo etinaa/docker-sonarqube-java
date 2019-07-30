@@ -1,11 +1,11 @@
-FROM sonarqube:7.7-community
+FROM sonarqube:7.9.1-community
 LABEL maintainer.name="Andrey Etin" \
       maintainer.email="etinaa@yandex.ru"
 
 WORKDIR $SONARQUBE_HOME/extensions/plugins
 
 #Bundled plugins
-ENV JAVA_PLUGIN_VERSION=5.13.0.18197 \
+ENV JAVA_PLUGIN_VERSION=5.13.1.18282 \
   KOTLIN_PLUGIN_VERSION=1.5.0.315 \
   JAVASCRIPT_PLUGIN_VERSION=5.2.1.7778 \
   XML_PLUGIN_VERSION=2.0.1.2020 \
@@ -20,8 +20,8 @@ RUN set -x \
   && curl -fSL -o sonar-html-plugin-${HTML_PLUGIN_VERSION}.jar https://binaries.sonarsource.com/Distribution/sonar-html-plugin/sonar-html-plugin-${HTML_PLUGIN_VERSION}.jar
 
 #Community plugins
-ENV CHECKSTYLE_PLUGIN_VERSION=4.20 \
-  FINDBUGS_PLUGIN_VERSION=3.11.0 \
+ENV CHECKSTYLE_PLUGIN_VERSION=4.21 \
+  FINDBUGS_PLUGIN_VERSION=3.10.0 \
   PMD_PLUGIN_VERSION=3.2.1
 
 RUN set -x \ 
