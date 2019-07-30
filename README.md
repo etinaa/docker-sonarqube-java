@@ -34,4 +34,4 @@ Used community plugins:
 [Sonar Checkstyle](https://github.com/checkstyle/sonar-checkstyle);
 [Sonar FindBugs](https://github.com/SonarQubeCommunity/sonar-findbugs);
 [Sonar PMD](https://github.com/SonarQubeCommunity/sonar-pmd);
-[Sonar Groovy](https://github.com/pmayweg/sonar-groovy)
+[Sonar Groovy](https://github.com/Inform-Software/sonar-groovy)
