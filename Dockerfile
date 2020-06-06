@@ -1,18 +1,21 @@
-FROM sonarqube:8.2-community
+FROM sonarqube:8.3.1-community
 LABEL maintainer.name="Andrey Etin" \
       maintainer.email="etinaa@yandex.ru"
+
+#Add curl command
+RUN apk --no-cache add curl
 
 WORKDIR $SONARQUBE_HOME/extensions/plugins
 
 #Bundled plugins
-ENV JAVA_PLUGIN_VERSION=6.2.0.21135 \
+ENV JAVA_PLUGIN_VERSION=6.3.0.21585 \
   KOTLIN_PLUGIN_VERSION=1.5.0.315 \
   JAVASCRIPT_PLUGIN_VERSION=5.2.1.7778 \
   XML_PLUGIN_VERSION=2.0.1.2020 \
   HTML_PLUGIN_VERSION=3.2.0.2082
 
 #Community plugins
-ENV CHECKSTYLE_PLUGIN_VERSION=4.30 \
+ENV CHECKSTYLE_PLUGIN_VERSION=4.32 \
   FINDBUGS_PLUGIN_VERSION=4.0.0 \
   PMD_PLUGIN_VERSION=3.2.1 \
   GROOVY_PLUGIN_VERSION=1.6
