@@ -23,11 +23,11 @@ Links
 
 Used bundled plugins:
 
-[Sonar Java](https://docs.sonarqube.org/display/PLUG/SonarJava);
-[Sonar Kotlin](https://docs.sonarqube.org/display/PLUG/SonarKotlin);
-[Sonar JavaScript](https://docs.sonarqube.org/display/PLUG/SonarJS);
-[Sonar XML](https://docs.sonarqube.org/display/PLUG/SonarXML);
-[Sonar HTML (prev. Sonar Web)](https://docs.sonarqube.org/pages/viewpage.action?pageId=1441834)
+[Sonar Java](https://docs.sonarqube.org/latest/analysis/languages/java/);
+[Sonar Kotlin](https://docs.sonarqube.org/latest/analysis/languages/kotlin/);
+[Sonar JavaScript](https://docs.sonarqube.org/latest/analysis/languages/javascript/);
+[Sonar XML](https://docs.sonarqube.org/latest/analysis/languages/xml/);
+Sonar Jacoco
 
 Used community plugins:
 
